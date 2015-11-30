@@ -12,6 +12,8 @@
 
 @interface AppDelegate () <UISplitViewControllerDelegate>
 
+@property (nonatomic, strong) UISplitViewController *splitView;
+
 @end
 
 @implementation AppDelegate
@@ -144,5 +146,66 @@
         }
     }
 }
+
+#pragma mark - Split View Methods
+
+- (UIImage *)grabScreenshot {
+    
+    // create graphics context with screen size
+    CGRect screenRect = [[UIScreen mainScreen] bounds];
+    UIGraphicsBeginImageContext(screenRect.size);
+    CGContextRef ctx = UIGraphicsGetCurrentContext();
+    [[UIColor blackColor] set];
+    CGContextFillRect(ctx, screenRect);
+    
+    // grab reference to our window
+    UIWindow *window = [UIApplication sharedApplication].keyWindow;
+    
+    // transfer content into our context
+    [window.layer renderInContext:ctx];
+    UIImage *screengrab = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    return screengrab;
+}
+
+- (void)showOverlay {
+    
+    // replace the split view with a view controller and show an overlay
+    
+    // grab a screenshot
+    UIImage *screenshot = [self grabScreenshot];
+    
+    // create a new view controller with it
+    UIViewController *underlay = [[UIViewController alloc]init];
+    UIImageView *background = [[UIImageView alloc]initWithImage:screenshot];
+    underlay.view = background;
+    
+    // grab the overlay controller
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    UINavigationController *overlay = (UINavigationController *)[storyboard instantiateViewControllerWithIdentifier:@"Overlay"];
+    overlay.modalPresentationStyle = UIModalPresentationFormSheet;
+    
+    // swap the split view
+    self.splitView = (UISplitViewController *)self.window.rootViewController;
+    self.window.rootViewController = underlay;
+    
+    // present the overlay
+    [underlay presentViewController:overlay animated:YES completion:nil];
+}
+
+- (void)dismissOverlay {
+    
+    // dismiss the overlay and bring back the split view
+    
+    // dismiss the overlay
+    [self.window.rootViewController dismissViewControllerAnimated:YES completion:^{
+        
+        // bring back the split view
+        self.window.rootViewController = self.splitView;
+    }];
+}
+
+
 
 @end
