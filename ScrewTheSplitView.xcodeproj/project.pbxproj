@@ -18,6 +18,7 @@
 		D207105A1C09209400949471 /* ScrewTheSplitViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D20710591C09209400949471 /* ScrewTheSplitViewTests.m */; };
 		D20710651C09209400949471 /* ScrewTheSplitViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D20710641C09209400949471 /* ScrewTheSplitViewUITests.m */; };
 		D20710741C0922CC00949471 /* OverlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D20710731C0922CC00949471 /* OverlayViewController.m */; };
+		D219797D1C0CB67900A01AC9 /* SplitViewDemo.gif in Resources */ = {isa = PBXBuildFile; fileRef = D219797C1C0CB67900A01AC9 /* SplitViewDemo.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		D20710661C09209400949471 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D20710721C0922CC00949471 /* OverlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverlayViewController.h; sourceTree = "<group>"; };
 		D20710731C0922CC00949471 /* OverlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverlayViewController.m; sourceTree = "<group>"; };
+		D219797C1C0CB67900A01AC9 /* SplitViewDemo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = SplitViewDemo.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 		D20710381C09209400949471 /* ScrewTheSplitView */ = {
 			isa = PBXGroup;
 			children = (
+				D219797C1C0CB67900A01AC9 /* SplitViewDemo.gif */,
 				D207103C1C09209400949471 /* AppDelegate.h */,
 				D207103D1C09209400949471 /* AppDelegate.m */,
 				D20710721C0922CC00949471 /* OverlayViewController.h */,
@@ -257,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D207104F1C09209400949471 /* LaunchScreen.storyboard in Resources */,
+				D219797D1C0CB67900A01AC9 /* SplitViewDemo.gif in Resources */,
 				D207104C1C09209400949471 /* Assets.xcassets in Resources */,
 				D207104A1C09209400949471 /* Main.storyboard in Resources */,
 			);
@@ -514,6 +518,7 @@
 				D207106B1C09209400949471 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D207106C1C09209400949471 /* Build configuration list for PBXNativeTarget "ScrewTheSplitViewTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +527,7 @@
 				D207106E1C09209400949471 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D207106F1C09209400949471 /* Build configuration list for PBXNativeTarget "ScrewTheSplitViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +536,7 @@
 				D20710711C09209400949471 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
