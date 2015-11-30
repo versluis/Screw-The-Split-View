@@ -8,6 +8,7 @@
 
 #import "MasterViewController.h"
 #import "DetailViewController.h"
+#import "AppDelegate.h"
 
 @interface MasterViewController ()
 
@@ -18,7 +19,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    self.navigationItem.leftBarButtonItem = self.editButtonItem;
+    // self.navigationItem.leftBarButtonItem = self.editButtonItem;
+    UIBarButtonItem *button = [[UIBarButtonItem alloc]initWithTitle:@"Show Overlay" style:UIBarButtonItemStyleDone target:self action:@selector(showOverlay)];
+    self.navigationItem.leftBarButtonItem = button;
 
     UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
     self.navigationItem.rightBarButtonItem = addButton;
@@ -200,14 +203,19 @@
     [self.tableView endUpdates];
 }
 
-/*
-// Implementing the above methods to update the table view in response to individual changes may have performance implications if a large number of changes are made simultaneously. If this proves to be an issue, you can instead just implement controllerDidChangeContent: which notifies the delegate that all section and object changes have been processed. 
- 
- - (void)controllerDidChangeContent:(NSFetchedResultsController *)controller
-{
-    // In the simplest, most efficient, case, reload the table view.
-    [self.tableView reloadData];
+# pragma mark - Split View Methods
+
+- (void)showOverlay {
+    
+    // wait a moment before taking the screenshot
+    [NSTimer scheduledTimerWithTimeInterval:0.2 target:self selector:@selector(showOverlayDelayed) userInfo:nil repeats:NO];
 }
- */
+
+- (void)showOverlayDelayed {
+    
+    AppDelegate *appDelegate = [UIApplication sharedApplication].delegate;
+    [appDelegate showOverlay];
+}
+
 
 @end

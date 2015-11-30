@@ -17,6 +17,7 @@
 		D207104F1C09209400949471 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D207104D1C09209400949471 /* LaunchScreen.storyboard */; };
 		D207105A1C09209400949471 /* ScrewTheSplitViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D20710591C09209400949471 /* ScrewTheSplitViewTests.m */; };
 		D20710651C09209400949471 /* ScrewTheSplitViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D20710641C09209400949471 /* ScrewTheSplitViewUITests.m */; };
+		D20710741C0922CC00949471 /* OverlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D20710731C0922CC00949471 /* OverlayViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,8 @@
 		D20710601C09209400949471 /* ScrewTheSplitViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScrewTheSplitViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D20710641C09209400949471 /* ScrewTheSplitViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrewTheSplitViewUITests.m; sourceTree = "<group>"; };
 		D20710661C09209400949471 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D20710721C0922CC00949471 /* OverlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverlayViewController.h; sourceTree = "<group>"; };
+		D20710731C0922CC00949471 /* OverlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverlayViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +111,8 @@
 			children = (
 				D207103C1C09209400949471 /* AppDelegate.h */,
 				D207103D1C09209400949471 /* AppDelegate.m */,
+				D20710721C0922CC00949471 /* OverlayViewController.h */,
+				D20710731C0922CC00949471 /* OverlayViewController.m */,
 				D20710421C09209400949471 /* MasterViewController.h */,
 				D20710431C09209400949471 /* MasterViewController.m */,
 				D20710451C09209400949471 /* DetailViewController.h */,
@@ -279,6 +284,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D20710471C09209400949471 /* DetailViewController.m in Sources */,
+				D20710741C0922CC00949471 /* OverlayViewController.m in Sources */,
 				D20710441C09209400949471 /* MasterViewController.m in Sources */,
 				D20710411C09209400949471 /* ScrewTheSplitView.xcdatamodeld in Sources */,
 				D207103E1C09209400949471 /* AppDelegate.m in Sources */,
