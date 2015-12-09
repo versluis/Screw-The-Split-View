@@ -24,7 +24,7 @@
         <!--Detail-->
         <scene sceneID="yUG-lL-AsK">
             <objects>
-                <viewController title="Detail" id="JEX-9P-axG" customClass="DetailViewController" sceneMemberID="viewController">
+                <viewController title="Detail" id="JEX-9P-axG" customClass="DetailViewController" customModule="SplitView_Swift" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="SYR-Wa-9uf"/>
                         <viewControllerLayoutGuide type="bottom" id="GAO-Cl-Wes"/>
@@ -61,19 +61,19 @@
             <point key="canvasLocation" x="709" y="129"/>
         </scene>
         <!--Overlay View Controller-->
-        <scene sceneID="uo4-xW-aHt">
+        <scene sceneID="x61-Ci-gef">
             <objects>
-                <viewController id="e53-1y-jKl" customClass="OverlayViewController" sceneMemberID="viewController">
+                <viewController id="3hr-eT-wDp" customClass="OverlayViewController" customModule="SplitView_Swift" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="gIZ-o4-nGf"/>
-                        <viewControllerLayoutGuide type="bottom" id="n6s-X2-1Zq"/>
+                        <viewControllerLayoutGuide type="top" id="MUs-JP-1H4"/>
+                        <viewControllerLayoutGuide type="bottom" id="HjE-Ta-dKr"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="N3O-fQ-d4t">
+                    <view key="view" contentMode="scaleToFill" id="B2L-36-CdS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Message here." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="02B-XK-N2A">
-                                <rect key="frame" x="224" y="289" width="152" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your message here" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iKf-qi-6az">
+                                <rect key="frame" x="227" y="289" width="147" height="21"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -83,21 +83,21 @@
                         <animations/>
                         <color key="backgroundColor" red="0.40000000000000002" green="1" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="02B-XK-N2A" firstAttribute="centerY" secondItem="N3O-fQ-d4t" secondAttribute="centerY" id="ZOK-ep-SxF"/>
-                            <constraint firstItem="02B-XK-N2A" firstAttribute="centerX" secondItem="N3O-fQ-d4t" secondAttribute="centerX" id="yWN-an-pPy"/>
+                            <constraint firstItem="iKf-qi-6az" firstAttribute="centerX" secondItem="B2L-36-CdS" secondAttribute="centerX" id="MGD-Ld-XGx"/>
+                            <constraint firstItem="iKf-qi-6az" firstAttribute="centerY" secondItem="B2L-36-CdS" secondAttribute="centerY" id="nNS-k9-NGu"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="rTM-cd-0xu">
-                        <barButtonItem key="rightBarButtonItem" title="Dismiss" id="rzu-Xq-FPa">
+                    <navigationItem key="navigationItem" id="v9P-Cw-hnd">
+                        <barButtonItem key="rightBarButtonItem" title="Dismiss" id="XnI-gD-o8y">
                             <connections>
-                                <action selector="dismissButtonPressed:" destination="e53-1y-jKl" id="aMh-5y-ttE"/>
+                                <action selector="dismissButtonPressed:" destination="3hr-eT-wDp" id="73b-7m-DsH"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="PQf-rj-925" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cbm-0v-cfG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2332" y="-231"/>
+            <point key="canvasLocation" x="2202" y="165"/>
         </scene>
         <!--Split View Controller-->
         <scene sceneID="Nki-YV-4Qg">
@@ -116,7 +116,7 @@
         <!--Master-->
         <scene sceneID="smW-Zh-WAh">
             <objects>
-                <tableViewController title="Master" clearsSelectionOnViewWillAppear="NO" id="7bK-jq-Zjz" customClass="MasterViewController" sceneMemberID="viewController">
+                <tableViewController title="Master" clearsSelectionOnViewWillAppear="NO" id="7bK-jq-Zjz" customClass="MasterViewController" customModule="SplitView_Swift" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="r7i-6Z-zg0">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -177,23 +177,23 @@
             <point key="canvasLocation" x="-45" y="129"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="tot-fk-TLf">
+        <scene sceneID="WFF-10-bif">
             <objects>
-                <navigationController storyboardIdentifier="Overlay" automaticallyAdjustsScrollViewInsets="NO" id="M9i-ED-wgi" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="Overlay" automaticallyAdjustsScrollViewInsets="NO" id="tOF-q7-7Pt" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Sji-Op-FNo">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hcq-Pn-OYe">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <animations/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="e53-1y-jKl" kind="relationship" relationship="rootViewController" id="wJQ-e4-7sR"/>
+                        <segue destination="3hr-eT-wDp" kind="relationship" relationship="rootViewController" id="M6b-C5-65R"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="a4I-0q-ixf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xij-8H-ili" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1520" y="-231"/>
+            <point key="canvasLocation" x="1390" y="165"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
