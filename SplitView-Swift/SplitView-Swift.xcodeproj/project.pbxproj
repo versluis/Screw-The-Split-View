@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D2359D581C18969400417FAF /* OverlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2359D571C18969400417FAF /* OverlayViewController.swift */; };
 		D2A8CA811C17841D007AF8D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A8CA801C17841D007AF8D8 /* AppDelegate.swift */; };
 		D2A8CA841C17841D007AF8D8 /* SplitView_Swift.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D2A8CA821C17841D007AF8D8 /* SplitView_Swift.xcdatamodeld */; };
 		D2A8CA861C17841D007AF8D8 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A8CA851C17841D007AF8D8 /* MasterViewController.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D2359D571C18969400417FAF /* OverlayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayViewController.swift; sourceTree = "<group>"; };
 		D2A8CA7D1C17841D007AF8D8 /* SplitView-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SplitView-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2A8CA801C17841D007AF8D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D2A8CA831C17841D007AF8D8 /* SplitView_Swift.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SplitView_Swift.xcdatamodel; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				D2A8CA801C17841D007AF8D8 /* AppDelegate.swift */,
 				D2A8CA851C17841D007AF8D8 /* MasterViewController.swift */,
 				D2A8CA871C17841D007AF8D8 /* DetailViewController.swift */,
+				D2359D571C18969400417FAF /* OverlayViewController.swift */,
 				D2A8CA891C17841D007AF8D8 /* Main.storyboard */,
 				D2A8CA8C1C17841D007AF8D8 /* Assets.xcassets */,
 				D2A8CA8E1C17841D007AF8D8 /* LaunchScreen.storyboard */,
@@ -264,6 +267,7 @@
 			files = (
 				D2A8CA811C17841D007AF8D8 /* AppDelegate.swift in Sources */,
 				D2A8CA841C17841D007AF8D8 /* SplitView_Swift.xcdatamodeld in Sources */,
+				D2359D581C18969400417FAF /* OverlayViewController.swift in Sources */,
 				D2A8CA861C17841D007AF8D8 /* MasterViewController.swift in Sources */,
 				D2A8CA881C17841D007AF8D8 /* DetailViewController.swift in Sources */,
 			);
@@ -492,6 +496,7 @@
 				D2A8CAAC1C17841D007AF8D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D2A8CAAD1C17841D007AF8D8 /* Build configuration list for PBXNativeTarget "SplitView-SwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +505,7 @@
 				D2A8CAAF1C17841D007AF8D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D2A8CAB01C17841D007AF8D8 /* Build configuration list for PBXNativeTarget "SplitView-SwiftUITests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +514,7 @@
 				D2A8CAB21C17841D007AF8D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
